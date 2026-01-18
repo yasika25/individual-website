@@ -1,0 +1,191 @@
+.body{
+      margin: 0;
+      padding: 0;
+     
+}
+
+
+.about-section{
+       
+        width:80%;
+        margin:auto;
+        padding:50px 0;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+          
+}
+.about-image{
+    position: relative;
+    display: block;
+}
+.img-box{
+    width: 220px;
+    height:250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.img-title{
+    position:relative;
+    font-size: 20px;
+    font-weight: bold;
+    background: #e67ba1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-sizing: content-box;
+    margin-right: 10px;     
+}
+.content-area{
+    max-width: 550px;
+    
+}
+.about-title {
+    color:  rgb(224, 88, 156);
+    font-size: 100px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px black;
+}
+.about-title span{
+    color: rgb(241, 234, 234);
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.box{
+    background: #FFF;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e1a2b7;
+}
+.choose-title{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color:  rgb(224, 88, 156) ;
+}
+.content-area p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.learn-btn{
+    display: inline-block;
+    padding:12px 24px;
+    background:#ffffff;
+    color: #b05977;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: bold;
+    box-shadow:  1px 4px 8px rgb(199, 30, 137);
+    transition: transform 0.3s ease;
+    box-shadow:10px ;
+    margin-top: 20px;
+    font-size: 20px;
+    right: 120px;
+    bottom: 30px;
+}
+.learn-btn.a{
+    color: #fefefe;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.misson h2{
+   font-size: 20px;
+   font-family:Arial, Helvetica, sans-serif;
+   font-style:normal;
+   color: rgb(224, 88, 156);
+}
+.misson p{
+    font-size: 15px;
+   font-family:Arial, Helvetica, sans-serif;
+   font-style:normal;
+   color: rgb(247, 245, 245);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.boxcheck{
+    display: none;
+}
+.innercol{
+    background: #90b4d2;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+}
+.iconcol i{
+    font-size: 40px;
+    color: #0d0d0d;
+    margin-bottom: 10px;
+}
+.boxcheck:checked +.innercol{
+    background: #e67ba1;
+    color: #fff;
+    transform: translate(-5px);
+    box-shadow: 0 8px 18px rgba(48, 116, 176, 0.766);
+}
+.boxcheck:checked +.innercol.iconcol i{
+    color: #000000;
+}
+.col-sm-3{
+  background-color: rgba(#575454);
+  width: 200px;
+  border: 1px solid rgb(242, 186, 186);
+  padding:50px;
+  margin: 20px;
+  display: inline-block;
+}
+.arrow-btn {
+    position: fixed; /* screen la fixed position */
+    top: 50%;        /* vertical center */
+    right: 20px;     /* right side margin */
+    transform: translateY(-50%); /* true vertical center */
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px; /* center arrow vertically */
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* for <a> tag */
+}
+
+.arrow-btn:hover {
+    background-color: #e91e63;
+}
+.return-btn {
+    position: fixed; /* fixed position on screen */
+    top: 50%;        /* vertical center */
+    left: 20px;      /* left side */
+    transform: translateY(-50%); /* true vertical center */
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px; /* center arrow vertically */
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.return-btn:hover {
+    background-color: #e91e63;
+}

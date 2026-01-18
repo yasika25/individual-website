@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.products{
+    background: linear-gradient(270deg, #f66bb5, #7ee6f6, #080e50, rgb(224, 88, 156));
+    background-size: 800% 800%; /* gradient bigger for animation */
+    animation: gradientMove 15s ease infinite; /* animation timing */
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-align: center;
+   
+}
+
+    @keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.product-title{
+    font-size: 100px;
+    color: rgb(224, 88, 156);
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    margin-top:20px;
+    top:-30px;
+}
+.product-title span{
+    color: black;
+}
+.product-grid{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    max-width: 1000px;
+
+   
+    
+}
+.product-text {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(14, 35, 94);
+    border-radius: 8px;              
+}
+
+.product-card {
+  position: relative;
+  padding-bottom: 15px;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  background-color: rgb(118, 212, 212);
+  text-align: center;
+}
+.product-card:hover::after {
+   transform: scale(1.03);
+   content: "Added!";
+   opacity: 1;
+   animation: moveDown 1s forwards;
+  
+}
+@keyframes moveDown{
+    0%{top:-30px;opacity: 0;}
+    50%{top:-10px;opacity: 1;}
+    100%{top:-50px;opacity:0;}
+}
+.Discounts{
+    position:absolute; 
+    top: 10px;
+    left: 10px;
+    background: palevioletred;
+    color: black;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.product-image {
+   width:100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-right: 0;
+  
+
+}
+@media(max-width:768px){
+    .product-grid{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 20px;
+    }
+}
+@media(max-width:480px){
+     .product-grid{
+        grid-template-columns: 1fr;
+        padding:0 10px;
+     }
+}
+.product-info{
+    padding: 10px;
+    font-size: 15px;
+}
+.product-info h2{
+    margin: 8px 0;
+    font-size: 18px;
+    text-align: center;
+    color:  rgb(185, 59, 101);
+    text-shadow: 0 0 10px rgb(30, 15, 143);
+}
+.price{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.price del {
+    color: #e331ae;
+}
+.icons{
+    position:relative;
+    display:block;
+    gap: 12px;
+    opacity: 1;
+    transition: 0.3s ease;  
+    
+}
+.product-card:hover .icons{
+    opacity: 1;
+}
+.icons button{
+    background: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px rgba (0,0,0,0.2);
+    transition: 0.2s;
+}
+.icons button:hover{
+    transform: translateY(-5px) scale(1.03);
+    background-color: rgb(224, 88, 156); 
+}
+.arrow-btn {
+    position: fixed; /* screen la fixed position */
+    top: 50%;        /* vertical center */
+    right: 20px;     /* right side margin */
+    transform: translateY(-50%); /* true vertical center */
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px; /* center arrow vertically */
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* for <a> tag */
+}
+
+.arrow-btn:hover {
+    background-color: #e91e63;
+}
+.return-btn {
+    position: fixed; /* fixed position on screen */
+    top: 50%;        /* vertical center */
+    left: 20px;      /* left side */
+    transform: translateY(-50%); /* true vertical center */
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px; /* center arrow vertically */
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.return-btn:hover {
+    background-color: #e91e63;
+}
+ 
+
